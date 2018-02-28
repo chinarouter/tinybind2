@@ -1,0 +1,22 @@
+{
+	"bakery": {
+		"name": "Janes",
+     "arrays": [1,2,3],
+     "locals" : ["local11", "local22", "local33"],
+		"cake": [
+			{
+				"name":"New York Cheese",
+				"fruit": [
+					{ "name":"blue berries", "quantity":25, "text":"freshness topping"}
+				]
+			},
+			{
+				"name":"white forest",
+				"fruit": [
+					{ "name":"blue berries", "quantity":10, "illegal":"attribute"},
+					{ "name":"strawberries", "quantity":8}
+				]
+			}
+		]
+	}
+}
