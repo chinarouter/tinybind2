@@ -17,6 +17,7 @@ struct cake
 struct bakery
 {
 	string name;
+	vector<int> arrays;
 	vector<cake> cakes;
 	int unbinded;
 };
@@ -25,6 +26,9 @@ And we want the following formats:
 ```xml
 //xml1
 <bakery name='Janes'>
+<arrays>1</arrays>
+<arrays>2</arrays>
+<arrays>3</arrays>
 <cake name='New York Cheese'>
 	<fruit name='blue berries' quantity='25'>freshness topping</fruit>
 </cake>
@@ -39,6 +43,7 @@ And we want the following formats:
 {
 	"bakery":	{
 		"name":	"Janes",
+		"arrays": [1,2,3],
 		"cake":	[{
 				"name":	"New York Cheese",
 				"fruit":	[{
@@ -79,6 +84,7 @@ STRUCT(cake)
 STRUCT(bakery)
 {
 	ATTR( string, name);
+	ARRAY(int, arrays);
 	CHILD( cake, cakes);
 };
 ```
