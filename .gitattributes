@@ -1,6 +1,1 @@
-* text=auto
-*.h eol=lf
-*.c eol=lf
-*.cpp eol=lf
-*.png binary
-*.jpg binary
+*.swift linguist-language=C++
